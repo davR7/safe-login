@@ -1,0 +1,19 @@
+.container {
+  padding: 40px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.7rem;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  font-size: 1.2rem;
+}
