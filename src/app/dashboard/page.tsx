@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Dashboard() {
   return (
-    <main className={`${styles.container} main`}>
+    <main className={`${styles.container} container`}>
       <h2>Dashboard Page</h2>
     </main>
   );

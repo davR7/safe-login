@@ -49,6 +49,12 @@ h2 {
   font-size: 2rem;
 }
 
-.main {
+main {
   flex: 1 0;
+}
+
+.container {
+  width: var(--max-width);
+  padding: 0 15px;
+  margin: 0 auto;
 }

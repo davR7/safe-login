@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   return (
-    <main className={`${styles.container} main`}>
+    <main className={`${styles.container} container`}>
       <h2>Blog Page</h2>
     </main>
   );
