@@ -7,18 +7,11 @@ export const authOptions: AuthOptions = {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        email: { label: "Email", type: "text", placeholder: "Informe E-mail" },
-        password: {
-          label: "Password",
-          type: "password",
-          placeholder: "Informe Senha",
-        },
+        email: { label: "Email", type: "text", placeholder: "*Digite E-mail" },
+        password: { label: "Senha", type: "password", placeholder: "*Digite Senha" },
       },
       async authorize(credentials) {
-        if (
-          user.email === credentials?.email &&
-          user.passsword === credentials?.password
-        ) {
+        if (user.email === credentials?.email && user.passsword === credentials?.password) {
           return user;
         } else {
           return null;
@@ -26,4 +19,9 @@ export const authOptions: AuthOptions = {
       },
     }),
   ],
+  pages: {
+    signIn: "/login",
+    signOut: "/login",
+    error: "/login",
+  },
 };
