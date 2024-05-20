@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
 import { options } from "./options";
+import LogoutButton from "../LogoutButton/page";
 
 export default function Navbar() {
   return (
@@ -16,6 +17,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <LogoutButton />
       </nav>
     </div>
   );
