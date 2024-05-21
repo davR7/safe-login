@@ -19,6 +19,22 @@ export const authOptions: AuthOptions = {
       },
     }),
   ],
+  callbacks: {
+    jwt: async ({ user, token }) => {
+      if (user) {
+        token.roles = user.roles;
+      }
+      return token;
+    },
+    session: async ({ session, token }) => ({
+      ...session,
+      user: {
+        id: token.sub,
+        ...session.user,
+        roles: token.roles,
+      },
+    }),
+  },
   pages: {
     signIn: "/login",
     signOut: "/login",
