@@ -47,6 +47,11 @@ a {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 main {
