@@ -4,8 +4,7 @@
 
 # SafeLogin
 
-Este projeto tem como objetivo implementar um sistema de autenticação em uma aplicação NextJS utilizando o NextAuth. A aplicação permitirá que usuário faça login e logout, e protegerá a rota /dashboard para que seja acessada apenas pelo administrador. Além disso,
-o demonstrará como personalizar o formulário de login do NextAuth, oferecendo uma melhor experiência para o usuário. Não será utilizado um banco de dados no projeto; em vez disso, será usado um usuário mock.
+Este projeto tem como objetivo implementar um sistema de autenticação em uma aplicação NextJS utilizando o NextAuth. A aplicação permitirá que o usuário faça login e logout, e protegerá a rota /dashboard para que seja acessada apenas pelo administrador. Além disso, o projeto demonstrará como personalizar o formulário de login do NextAuth, incluindo a validação com a biblioteca react-hook-form e modificando sua interface para proporcionar uma melhor experiência ao usuário. Não será utilizado um banco de dados no projeto; em vez disso, será usado um usuário mock.
 
 ### Usuário Mock:
 
