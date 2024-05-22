@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  color: var(--primary);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
