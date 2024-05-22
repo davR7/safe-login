@@ -73,3 +73,13 @@
 .btnForm:hover {
   background: var(--primary);
 }
+
+.error {
+  background-color: var(--softDark);
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 0;
+  color: var(--softPrimary);
+}

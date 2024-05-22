@@ -5,8 +5,11 @@ import { loginErrors } from "./loginErrors";
 import { ICredentials } from "./types";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SigninForm() {
+  const [error, setError] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -20,6 +23,13 @@ export default function SigninForm() {
 
     if (response?.ok) {
       router.push(response.url!);
+    } else {
+      setTimeout(() => setError(""), 4000);
+
+      if (response?.status === 401) {
+        return setError("Invalid email or password");
+      }
+      setError("Something is wrong");
     }
   };
 
@@ -51,6 +61,11 @@ export default function SigninForm() {
           Entrar
         </button>
       </form>
+      {error && (
+        <div className={styles.error}>
+          <p className={styles.message}>Oops... {error}</p>
+        </div>
+      )}
     </>
   );
 }
